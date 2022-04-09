@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/animation.css">
+    <link href="./assets/Awesome/css/all.css" rel="stylesheet">
+
+    <title>RESERVACIONES</title>
+</head>
+
+<body>
+
+    <header class="gridHeader">
+        <div class="gLogo">
+            <a href="./index.html"> <img src="assets/icons/SUSHI WEB190.png" alt="Mi Logo"></a>
+        </div>
+        <div class="gNav">
+            <nav>
+                <ul>
+                    <li><a href="./menu.html"> NUESTRA CARTA </a></li>
+                    <li><a href="./reservations.html"> RESERVACIONES </a></li>
+                    <li><a href="./events.html"> EVENTOS </a></li>
+                    <li><a href="./gallery.html"> GALERIA </a></li>
+                    <li><a href="./contact.html"> CONTACTO </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><!-- Fin Encabezado -->
+
+    <div class="gridBanner">
+        <div class="gBanner backgroundBanner">
+            <span>RESERVACIONES</span>
+        </div>
+    </div>
+
+    <div id="bodyContent">
+
+        <div class="reservationForm">
+            <p>RESERVAR AHORA</p>
+
+            <form action="index.html" method="get">
+
+                <div>
+                    <span>CANTIDAD DE INVITADOS: </span>
+                    <label for="op1">1</label>
+                    <input type="radio" name="invitados" id="op1" value="1" checked>
+                    <label for="op2">2</label>
+                    <input type="radio" name="invitados" id="op1" value="2">
+                    <label for="op3">3</label>
+                    <input type="radio" name="invitados" id="op3" value="3">
+                    <label for="op4">4</label>
+                    <input type="radio" name="invitados" id="op4" value="4">
+                    <label for="op4">5</label>
+                    <input type="radio" name="invitados" id="op5" value="5">
+
+                    <select name="invitadosplus" id="invitadosplus">
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mifecha">SELECCIONE UNA FECHA: </label>
+                    <input type="date" name="fecha" id="mifecha" step="1" min="2021-09-01" max="2022-12-31"
+                        value="2021-06-09">
+
+                    <label for="mihorario">SELECCIONE UN HORARIO: </label>
+                    <select name="horario" id="mihorario">
+                        <option value="10">10 hs</option>
+                        <option value="11">11 hs</option>
+                        <option value="12">12 hs</option>
+                        <option value="13">13 hs</option>
+                        <option value="14">14 hs</option>
+                        <option value="15">15 hs</option>
+                        <option value="16">16 hs</option>
+                        <option value="17">17 hs</option>
+                        <option value="18">18 hs</option>
+                        <option value="19">19 hs</option>
+                        <option value="20">20 hs</option>
+                        <option value="21">21 hs</option>
+                        <option value="22">22 hs</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="SOLICITAR RESERVA">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    
+    <footer id="footer" class="gridFooter">
+        <div class="gHours">
+            <p>Jueves a Domingos</p>
+            <p>20:30 - 00:30</p>
+            <p>Av. Rafael Nueñez 4560</p>
+        </div>
+        <div class="gFollowUs">
+
+            <nav>
+                <ul>
+                    <li><a href="https://es-la.facebook.com/"><i class="fab fa-facebook scale"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube scale"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram scale"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=5493517441616&text&app_absent=0"><i
+                                class="fab fa-whatsapp scale"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer><!-- Fin Pie de Página -->
+
+
+</body>
+
+</html>

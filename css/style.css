@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-bg-color: #13151e;
+    --main-text-shadow-color: #D6222B;
+    --main-font-color: #fafafa;
+
+    /* color palette */
+    --color-coral: #D91A2A;
+    --color-pink: #BF1B39;
+    --color-dark: #a00000;
+    --color-gris: #a70000;
+}
+
+body{
+    color: var(--main-font-color);
+    background-color: var(--main-bg-color);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*** Default Screen Size Iphone 6 plus (414x736) PAR EL HOME***/
+
+/********** header ************/
+
+.gridHeader{
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+    "gLogo"
+    "gNav";
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gLogo{
+    grid-area: gLogo;
+    min-height: 84px;
+    width: 165px;
+    margin-top: 10px;
+    margin-left: 10px;
+    filter:saturate(200%);
+}
+
+
+.gNav{
+   display: none;
+}
+
+/******** banner **************/
+
+.gridBanner{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "gBanner";
+    grid-template-columns: 100%;
+}
+
+.gBanner{
+    grid-area: gBanner;
+    min-height: 200px;
+    max-height: 200px;
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+.gBanner span{
+    display: inline-block;
+    color: var(--main-font-color);
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 68px;
+    animation: tracking-in-contract 1.5s 1 alternate;
+}
+
+
+
+/***** HOME ********/
+
+.gridHomeContent {
+	height: 100vh;
+	display: grid;
+	grid-template-areas:
+	"gMenu"
+	"gReservations"
+	"gEvents"
+	"gGallery"
+	"gContact";
+}
+
+.gMenu{
+	grid-area: gMenu;
+}
+
+.gReservations{
+	grid-area: gReservations;
+}
+
+.gEvents{
+	grid-area: gEvents;
+}
+
+.gGallery{
+	grid-area: gGallery;
+}
+
+.gContact{
+	grid-area: gContact;
+}
+
+.gHome {
+    grid-area: gHome;
+    display: none;
+}
+
+
+/******* GRID EVENT **********/
+
+.gridEvent{
+
+    display: grid;
+    grid-template-areas: 
+    "gTitle"
+    "gDescription1"
+    "gEventHallImg"
+    "gDescription2"
+    "gSize";
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+    margin: 70px 0;
+}
+
+.gridEvent a{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--main-bg-color);
+    text-shadow: 3px 2px 12px var(--main-text-shadow-color);
+    text-align: center;
+    animation: flicker2 1s infinite alternate;
+}
+
+.gTitle{
+    grid-area: gTitle;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.gDescription1{
+    grid-area: gDescription1;
+    margin: 10px;
+}
+.gDescription2{
+    grid-area: gDescription2;
+    margin: 10px;
+  }
+.gEventHallImg{
+    grid-area: gEventHallImg;
+    width: 100%;
+    margin: 10px;
+}
+
+.gSize{
+    grid-area: gSize;
+    background-color: var(--color-pink);
+}
+
+/********** GRID CONCTACT **********/
+
+.gridContact{
+    display: grid;
+    grid-template-areas:
+    "gAddress"
+    "gMap" 
+    "gForm";
+    align-items: center;
+    justify-items: center;
+    margin: 50px 0;
+}
+
+.gAddress {
+	grid-area: gAddress;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.gMap {
+	grid-area: gMap;
+}
+
+.gForm {
+	grid-area: gForm;
+    margin: 25px 0;
+    align-items: center;
+    justify-items: left;
+}
+
+
+/********** MiniBanner  ***********/
+.miniBanner {
+    width: 100vw;
+}
+
+.miniBannerStyle {
+    min-height: 26px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: var(--main-bg-color);
+}
+
+.miniBannerStyle a {
+    color: var(--main-font-color);
+    width: 240px;
+    height: 28px;
+    font-size: 26px;	
+    text-decoration: none;
+    text-align: center;
+    font-weight: 300;
+    text-shadow: 3px 2px 12px var(--main-text-shadow-color);
+    border-radius: 0 110px 0 110px;
+}
+
+
+
+/****** bodyContent  *******/
+
+#bodyContent {
+    margin: 50px 20%;
+}
+
+
+/******* Contact Form  **********/
+
+.contactForm {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.contactForm input{
+    width: 300px;
+    padding: 5px 3px;
+    margin: 5px 3px;
+}
+.contactForm textarea {
+    width: 300px;
+    height: 230px;
+    padding: 5px 3px;
+    margin: 5px 3px;
+}
+
+.mapouter {
+    position: relative;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+}
+.gmap_canvas iframe{
+    width: 350px;
+    height: 350px;
+}
+
+/********** Reservation Form  ************/
+
+.reservationForm {
+    text-align: left;
+    min-height: 300px;
+}
+
+.reservationForm p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 5px 3px;
+    margin: 5px 3px;
+}
+
+.reservationForm span {
+    padding: 5px 3px;
+    margin: 5px 3px;
+}
+.reservationForm label{
+    padding: 5px 3px;
+    margin: 5px 3px;
+}
+.reservationForm input{
+    padding: 5px 3px;
+    margin: 5px 3px;
+}
+
+/************ MENU ****************/
+
+#menu {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#menu span{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--main-font-color);
+    text-shadow: 3px 2px 12px var(--main-text-shadow-color);
+    text-align: center;
+}
+
+#menu .menu{
+    width: 50%;
+}
+
+#menu .menu table{
+    margin: 25px 0;
+    width: 100%;
+    hyphens: auto;
+}
+
+
+/******* GALLERY ********/
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 35px 5vw;
+
+}
+
+#gallery img {
+    max-width: 25vw;
+    width: 350px;
+}
+
+/*****************   BACKGROUNDS    *********************/
+
+.backgroundBanner{
+    background-image: url("../assets/img/fondo.jpg");
+}
+
+.backgroundHome{
+    background-image: url("../assets/img/home1920.jpg");
+}
+
+.backgroundMenu{
+    background-image: url("../assets/img/menu.jpg");
+}
+
+.backgroundContact {
+    background-image: url("../assets/img/contact.jpg");
+}
+
+.backgroundEvents {
+    background-image: url("../assets/img/events.jpg");
+}
+
+.backgroundReservations {
+    background-image: url("../assets/img/reservations.jpg");
+}
+
+.backgroundGallery {
+    background-image: url("../assets/img/gallery.jpg");
+}
+
+
+
+/******** PIE DE PAGINA ********/
+
+.gridFooter {
+    display: grid;
+    grid-template-areas:
+    "gHours"
+    "gFollowUs";
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gHours{
+    grid-area: gHours;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.gFollowUs{
+    grid-area: gFollowUs;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+#footer {
+    background-color: var(--color-dark);
+    color: whitesmoke;
+}
+
+#footer .title{
+    font-size: 1 rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+#footer .regularSmall{
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+#footer ul{
+    list-style-type: none;
+}
+
+#footer li{
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#footer a{
+    color: var(--main-font-color);
+    font-size: 2rem;
+    text-decoration:none;
+}
+
+#footer .fa-angle-double-up{
+    font-size: 1.5rem;
+    margin: 0.5em 0;
+}
+
+
+/******** MEDIAS QUERYS **************/
+
+/* Example IPAD PRO */
+@media all and (min-width: 1024px){
+
+    /***** HEADER *****/
+    .gridHeader{
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "gLogo"
+        "gNav";
+        grid-template-columns: 175px auto;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .gNav{
+       display: none;
+    }
+
+    
+    /***** HOME PAGE *****/
+    .gridHomeContent{
+		grid-template-areas:
+			"gMenu gMenu"
+			"gReservations gReservations"
+			"gEvents gEvents"
+			"gGallery gGallery"
+			"gContact gContact";
+	}
+
+    .miniBannerStyle{
+        background-size: 50%;
+        background-position: right;
+        justify-content: flex-start;
+    }
+
+    .miniBannerStyle a{
+        width: 300px;
+        height: 50px;
+        font-size: 32px;
+        margin-left: 12%;
+    }
+
+
+    /***** CONTACT PAGE *****/ 
+    .gridContact{
+        grid-template-areas:
+        "gAddress gMap gForm";
+    }
+
+    .gAddress {
+        width: 33vw;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .gMap {
+        width: 33vw;
+        align-items: center;
+    }
+    
+    .gForm {
+        width: 33vw;
+    }
+
+    .mapouter {
+        width: 30vw;
+    }
+    
+    .gmap_canvas {
+        width: 30vw;
+    }
+
+    .gmap_canvas iframe{
+        width: 500px;
+        height: 500px;
+    }
+
+    /***** EVENT PAGE *****/
+
+    .gridEvent{
+        display: grid;
+        grid-template-areas: 
+        "gTitle  gEventHallImg"
+        "gDescription1 gEventHallImg"
+        "gDescription2 gEventHallImg"
+        "gSize gEventHallImg";
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: center;
+        margin: 100px 10vw;
+    }
+
+    .gTitle {
+        font-size: 1.4rem;
+        font-weight: 700;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .gEventHallImg{
+        grid-area: gEventHallImg;
+    }
+
+    .gEventHallImg img{
+        width: inherit
+    }
+
+    .gSize{
+        grid-area: gSize;
+        background-color: var(--color-pink);
+    }
+
+}
+
+/* Example Laptop_L 1440px */
+@media all and (min-width: 1440px){
+
+    /***** HEADER *****/
+    .gridHeader{
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "gLogo gNav";
+        grid-template-columns: 175px auto;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .gNav{
+        display: grid;
+        grid-area: gNav;
+        text-align: center;
+        margin-left: -175px;
+    }
+
+    .gNav ul{
+        list-style-type: none;
+    }
+    
+    .gNav li{
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 0 30px;
+    }
+    
+    .gNav a{
+        width: 160px;
+        color:whitesmoke;
+        font-size: 17px;
+        font-weight: 400;
+        text-decoration:none;
+    }
+
+    .gNav a:hover{
+        text-shadow: 3px 2px 12px var(--main-text-shadow-color);
+    }
+
+    /******** banner **************/
+
+    .gBanner{
+        min-height: 200px;
+    }
+
+    .gBanner span{
+        font-size: 50px;
+        margin-top: 63px;
+    }
+
+
+    /*****/
+    
+    .gridHomeContent {
+		grid-template-areas:
+			"gHome";
+	}
+    .gMenu, .gReservations, .gEvents, .gGallery, .gContact{
+        display: none;
+    }
+    .gHome {
+        display: grid;
+    }
+
+   
+    /********* HOME ***********/
+
+    .homeStyle {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: var(--main-bg-color);
+    }
+
+    .homeStyle .logoLarge img{
+        width: 60vw;
+        filter:saturate(200%)
+    }
+
+    .homeStyle span{
+        color: var(--main-font-color);
+        font-size: 64px;
+        text-align: center;
+        font-weight: 100;
+        text-shadow: 3px 2px 12px var(--main-text-shadow-color);
+    }
+    .homeStyle span:hover{
+        font-weight: 700;
+    }
+
+    .homeStyle ul li{
+        list-style-type: none;
+        list-style-position: unset;
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 50px;
+    }
+
+    .homeStyle a {
+        color: var(--main-font-color);
+        font-size: 24px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 300;
+        animation: flicker2 1s infinite alternate;
+    }
+
+/* RESERVACIONES*/
+
+    .gTitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .gridFooter {
+        display: grid;
+        grid-template-areas:
+        "gHours gFollowUs";
+        align-items: center;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+}
+
