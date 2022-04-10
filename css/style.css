@@ -145,10 +145,11 @@ body{
 .gridEvent a{
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--main-bg-color);
+    color: var(--color-coral);
     text-shadow: 3px 2px 12px var(--main-text-shadow-color);
     text-align: center;
-    animation: flicker2 1s infinite alternate;
+    /*animation: flicker2 1s infinite alternate;*/
+    animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
 }
 
 .gTitle{
