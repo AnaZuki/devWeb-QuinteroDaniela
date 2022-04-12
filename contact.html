@@ -2,100 +2,191 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/png">
+	<link rel="icon" href="./assets/icons/favicon.png" type="image/png">
+	<link href="./assets/Awesome/css/all.min.css" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/animation.css">
 	<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
-	<link href="./assets/Awesome/css/all.css" rel="stylesheet">
-
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<title>CONTACTANOS</title>
 </head>
 
 <body>
 
-	<header class="gridHeader">
-		<div class="gLogo">
-			<a href="./index.html"> <img src="assets/icons/SUSHI WEB190.png" alt="Mi Logo"></a>
-		</div>
-		<div class="gNav">
-			<nav>
-				<ul>
-					<li><a href="./menu.html"> NUESTRA CARTA </a></li>
-					<li><a href="./reservations.html"> RESERVACIONES </a></li>
-					<li><a href="./events.html"> EVENTOS </a></li>
-					<li><a href="./gallery.html"> GALERIA </a></li>
-					<li><a href="./contact.html"> CONTACTO </a></li>
+	<div class="container-fluid p-0">
+		<!-- HEADER -->
+		<nav class="navbar navbar-expand-lg navbar-custom">
+			<div class="d-flex w-25 order-0">
+				<a class="navbar-brand navbar-custom__brand" href="./index.html">
+					<img class="wow animate__animated animate__fadeInTopLeft animate__faster"
+						src="assets/icons/logo_small.png" alt="Mi Logo">
+				</a>
+			</div>
+			<div class="navbar-collapse collapse justify-content-center order-2 order-lg-1 navbar-custom__link navbar-custom__link--colorPink"
+				id="collapsingNavbar">
+				<ul class="navbar-nav mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link mx-3" href="./menu.html">MENU</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mx-3" href="./reservations.html">RESERVACIONES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mx-3" href="./events.html">EVENTOS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mx-3" href="./gallery.html">GALERÍA</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link mx-3" href="./contact.html">CONTACTO</a>
+					</li>
 				</ul>
-			</nav>
-		</div>
-	</header><!-- Fin Encabezado -->
+			</div>
+			<div class="navbar-text w-25 text-right order-1">
+				<button class="navbar-toggler navbar-custom__toogler" type="button" data-toggle="collapse"
+					data-target="#collapsingNavbar" aria-controls="MyMenu" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<i class="fas fa-ellipsis-v "></i>
+				</button>
+			</div>
+		</nav><!-- HEADER END -->
 
-	<div class="gridBanner">
-		<div class="gBanner backgroundBanner">
-			<span>CONTACTO</span>
-		</div>
-	</div>
-
-	<div class="gridContact">
-
-		<div class="gAddress">
-			<div>
-				<p> Córdoba Capital </p>
-				<p>Av. Rafael Nueñez 4560</p>
-				<p>Tel: (351) 433-6980 o (351) 987-9496</p>
+		<div class="banner banner--img container-fluid px-0 backgroundBanner text-center py-5">
+			<!--BANNER -->
+			<div class="banner__overlay banner__overlay--soft"></div>
+			<div class="banner__container w-100">
+				<span class="d-inline-block d-sm-none h1 font-weight-light tracking-in-contract my-3 px-2">CONTACTO</span>
+				<span class="d-none d-md-inline-block d-lg-none display-4 tracking-in-contract my-4 px-2">CONTACTO</span>
+				<span class="d-none d-lg-inline-block display-3 tracking-in-contract my-5 px-2">CONTACTO</span>
 			</div>
 		</div>
+		<!--FIN BANNER -->
 
-		<div class="gMap">
-			<div class="mapouter">
-				<div class="gmap_canvas"><iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.7997876994195!2d-64.23787268500813!3d-31.364503681421414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329936b2cf91e9%3A0x8761fc0d73941ec9!2sAv.%20Rafael%20N%C3%BA%C3%B1ez%204560%2C%20X5009CGN%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1648168320881!5m2!1ses-419!2sar"
-						width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<div class="container my-5">
+			<div class="row">
+
+				<div class="col-12 col-md-12 col-lg-6">
+					<address>
+						<p class="lead">Córdoba, Argentina</p>
+						<p>Av. Rafael Nueñez 4560</p>
+						<p>Tel: (351) 432-6990 / (351) 986-7496</p>
+					</address>
+
+					<div class="embed-responsive embed-responsive-1by1">
+						<iframe class="embed-responsive-item"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.7997876994195!2d-64.23787268500813!3d-31.364503681421414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329936b2cf91e9%3A0x8761fc0d73941ec9!2sAv.%20Rafael%20N%C3%BA%C3%B1ez%204560%2C%20X5009CGN%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1648168320881!5m2!1ses-419!2sar"
+							width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+
+				</div>
+
+				<div class="col-12 col-md-12 col-lg-6">
+					<form action="index.html" method="POST">
+						<div class="form-group">
+							<label for="formGroupName">Nombre</label>
+							<input type="text" class="form-control" id="formGroupName" placeholder="John">
+						</div>
+						<div class="form-group">
+							<label for="formGroupApellido">Apellido</label>
+							<input type="text" class="form-control" id="formGroupApellido" placeholder="Doe">
+						</div>
+						<div class="form-group">
+							<label for="formControlEmail">Email</label>
+							<input type="email" class="form-control" id="formControlEmail"
+								placeholder="name@example.com">
+						</div>
+						<div class="form-group">
+							<label for="formControlTextarea">Ingresa tu consulta o comentario</label>
+							<textarea class="form-control" id="formControlTextarea" rows="12"></textarea>
+						</div>
+						<div class="form-group">
+							<button type="button" class="button button--hover button--theme-purple" data-toggle="modal"
+								data-target="#modalMessage">Enviar</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
 
-		<div class="gForm">
-			<div class="contactForm">
-				<form action="index.html" method="get">
-					<div><input type="text" name="nombre" id="nombre" placeholder="Nombre"></div>
-					<div><input type="text" name="apellido" id="apellido" placeholder="Apellido"></div>
-					<div><input type="email" name="pass" id="email" placeholder="Email"></div>
-					<div><textarea name="texto">Ingresa tu consulta o comentario</textarea></div>
-					<div><input type="submit" name="enviar" value="ENVIAR"></div>
-				</form>
+		<!-- FOOTER -->
+		<footer class="footer container-fluid  mx-auto w-100 px-0 text-center">
+
+			<div class="d-flex flex-column flex-md-row">
+
+				<div class="footer__schedule container col-12 col-md-4 col-lg-4 p-4">
+					<div>
+						<p>Días y Horarios</p>
+						<p>Jueves a Domingos</p>
+						<p>20:30 - 00:30</p>
+					</div>
+				</div>
+
+				<div class="footer__socialMedia container col-12 col-md-4 col-lg-4 p-4">
+					
+					<nav>
+						<ul class="list-inline p-2">
+							<li class="list-inline-item"><a href="https://es-la.facebook.com/" target="_blank"
+									rel="noopener noreferrer">
+									<i class="fab fa-facebook fa-2x "></i></a></li>
+							<li class="list-inline-item"><a href="https://www.youtube.com/" target="_blank"
+									rel="noopener noreferrer">
+									<i class="fab fa-youtube fa-2x "></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/?hl=es-la" target="_blank"
+									rel="noopener noreferrer">
+									<i class="fab fa-instagram fa-2x "></i></a></li>
+							<li class="list-inline-item"><a
+									href="https://api.whatsapp.com/send/?phone=5493517441616&text&app_absent=0"
+									target="_blank" rel="noopener noreferrer">
+									<i class="fab fa-whatsapp fa-2x "></i></a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="footer__address container col-12 col-md-4 col-lg-4 p-4">
+					<div>
+						<address>
+							<p>Córdoba, Argentina</p>
+							<p>Av. Rafael Nueñez 4560</p>
+							<p>Tel: (351) 432-6990 / (351) 986-7496</p>
+						</address>
+					</div>
+				</div>
+
+			</div>
+		</footer><!-- FOOTER END -->
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modalMessage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bg-purple">
+					<h5 class="modal-title" id="exampleModalLabel">HajimeFood</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body bg-black">
+					<p>Muchas gracias por contactate.</p>
+					<p>Te estaremos respondiendo a la brevedad.</p>
+				</div>
+				<div class="modal-footer bg-black">
+					<button type="button" class="button button--theme-purple" data-dismiss="modal">Close</button>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<footer id="footer" class="gridFooter">
-		<div class="gHours">
-			<p>Jueves a Domingos</p>
-			<p>20:30 - 00:30</p>
-			<p>Av. Rafael Nueñez 4560</p>
-		</div>
-		<div class="gFollowUs">
-
-			<nav>
-				<ul>
-					<li><a href="https://es-la.facebook.com/"><i class="fab fa-facebook scale"></i></a></li>
-					<li><a href="https://www.youtube.com/"><i class="fab fa-youtube scale"></i></a></li>
-					<li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram scale"></i></a></li>
-					<li><a href="https://api.whatsapp.com/send/?phone=5493517441616&text&app_absent=0"><i
-								class="fab fa-whatsapp scale"></i></a></li>
-				</ul>
-			</nav>
-		</div>
-
-	</footer><!-- Fin Pie de Página -->
 
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
 	</script>
-
+	<script src="./jquery/jquery-3.5.1.slim.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

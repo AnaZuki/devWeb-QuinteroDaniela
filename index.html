@@ -3,98 +3,263 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/png">
+	<link rel="icon" href="./assets/icons/favicon.png" type="image/png">
+	<link href="./assets/Awesome/css/all.min.css" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/animation.css">
 	<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
-	<link href="./assets/Awesome/css/all.css" rel="stylesheet">
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<title>Hajimefood</title>
 </head>
 
 <body>
-	<header class="gridHeader">
-		<div class="gLogo">
-			<a href="./index.html"> <img class="wow animate__animated animate__zoomIn"
-					src="assets/icons/SUSHI WEB190.png" alt="Mi Logo"></a>
-		</div>
-		<div class="gNav">
-			<nav>
-				<ul>
-					<li><a href="./menu.html"> NUESTRA CARTA </a></li>
-					<li><a href="./reservations.html"> RESERVACIONES </a></li>
-					<li><a href="./events.html"> EVENTOS </a></li>
-					<li><a href="./gallery.html"> GALERIA </a></li>
-					<li><a href="./contact.html"> CONTACTO </a></li>
+	<div class="container-fluid p-0">
+		<!-- HEADER -->
+		<nav class="navbar navbar-expand-lg navbar-custom">
+			<div class="d-flex w-25 order-0">
+				<a class="navbar-brand navbar-custom__brand" href="./index.html">
+					<img class="wow animate__animated animate__fadeInTopLeft animate__faster"
+						src="assets/icons/logo_small.png" alt="Mi Logo">
+				</a>
+			</div>
+			<div class="navbar-collapse collapse justify-content-center order-2 order-lg-1 navbar-custom__link navbar-custom__link--colorPink"
+				id="collapsingNavbar">
+				<ul class="navbar-nav mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link mx-3" href="./menu.html">MENU</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mx-3" href="./reservations.html">RESERVACIONES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mx-3" href="./events.html">EVENTOS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mx-3" href="./gallery.html">GALERÍA</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mx-3" href="./contact.html">CONTACTO</a>
+					</li>
 				</ul>
-			</nav>
+			</div>
+			<div class="navbar-text w-25 text-right order-1">
+				<button class="navbar-toggler navbar-custom__toogler" type="button" data-toggle="collapse"
+					data-target="#collapsingNavbar" aria-controls="MyMenu" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<i class="fas fa-ellipsis-v "></i>
+				</button>
+			</div>
+		</nav><!-- HEADER END -->
+
+		<!-- HOME LG XL (DESKTOP) -->
+		<div class="container-fluid d-none d-lg-block px-0">
+			<div class="banner banner--imgBig">
+
+				<div class="banner__overlay banner__overlay--soft"></div>
+				<div class="banner__imgBig embed-responsive">
+					<img src="./assets/img/home.png" alt="fondo">
+				</div>
+
+				<div class="banner__container h-100">
+					<div class="d-flex h-100 text-center align-items-center">
+						<div class="w-100">
+							<div>
+								<img class="img-fluid w-50 wow animate__animated animate__zoomIn animate__slow mb-4"
+									src="./assets/img/logoLarge.png" alt="Hajimefood">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</header><!-- Fin Encabezado -->
 
-	<div class="gridHomeContent">
-		<div class="gHome">
-			<div id="home">
-				<div class="homeStyle backgroundHome">
+		<!-- HOME XS (Celular - Iphone6)-->
+		<div class="containter-fluid d-block d-sm-block d-md-none text-center bg-black border-purple my-5">
 
-					<div class="logoLarge"><img class="wow animate__animated animate__bounceIn animate__slow"
-							src="./assets/icons/SUSHI WEB-GRANDE-03.png" alt="hajimefood"></div>
+			<div class="card border-0 my-2">
+				<img src="./assets/img/menu-bgImage-celular.jpg" class="card-img" alt="MENU">
+				<div class="card-img-overlay wow animate__animated animate__bounceInLeft">
+					<div class="miniBanner miniBanner--gradient miniBanner--border">
+						<a class="miniBanner__text" href="./menu.html">MENU</a>
+					</div>
+				</div>
+			</div>
 
+			<div class="card border-0 my-2">
+				<img src="./assets/img/reservations-bgImage-celular.jpg" class="card-img" alt="RESERVACIONES">
+				<div class="card-img-overlay wow animate__animated animate__bounceInLeft">
+					<div class="miniBanner miniBanner--gradient miniBanner--border">
+						<a class="miniBanner__text" href="./reservations.html">RESERVACIONES</a>
+					</div>
+				</div>
+			</div>
+			<div class="card border-0 my-2">
+				<img src="./assets/img/events-bgImage-celular.jpg" class="card-img" alt="EVENTOS">
+				<div class="card-img-overlay wow animate__animated animate__bounceInLeft ">
+					<div class="miniBanner miniBanner--gradient miniBanner--border">
+						<a class="miniBanner__text" href="./events.html">EVENTOS</a>
+					</div>
+				</div>
+			</div>
+			<div class="card border-0 my-2">
+				<img src="./assets/img/gallery-bgImage-celular.jpg" class="card-img" alt="GALERIA">
+				<div class="card-img-overlay wow animate__animated animate__bounceInLeft">
+					<div class="miniBanner miniBanner--gradient miniBanner--border">
+						<a class="miniBanner__text" href="./gallery.html">GALERIA</a>
+					</div>
+				</div>
+			</div>
+			<div class="card border-0 my-2">
+				<img src="./assets/img/contact-bgImage-celular.jpg" class="card-img" alt="CONTACTO">
+				<div class="card-img-overlay wow animate__animated animate__bounceInLeft">
+					<div class="miniBanner miniBanner--gradient miniBanner--border">
+						<a class="miniBanner__text" href="./contact.html">CONTACTO</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- HOME MD (Tablet ej IPAD) -->
+		<div class="containter-fluid d-none d-md-block d-lg-none text-center bg-gray border-purple">
+			<div class="d-flex flex-column text-center justify-content-center">
+
+				<div class="card bg-black text-white border-0  m-4">
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<div class="card-body wow animate__animated animate__bounceInLeft">
+								<div class="miniBanner miniBanner--gradient miniBanner--border">
+									<a class="miniBanner__text" href="./menu.html">MENU</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<img src="./assets/img/menu-bgImage-tablet.jpg" class="card-img" alt="Nuestro Menu">
+						</div>
+					</div>
+				</div>
+
+				<div class="card bg-black text-white border-0  m-3">
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<img src="./assets/img/reservations-bgImage-tablet.jpg" class="card-img" alt="RESERVACIONES">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body wow animate__animated animate__bounceInRight">
+								<div class="miniBanner miniBanner--gradient miniBanner--border">
+									<a class="miniBanner__text" href="./reservations.html">RESERVACIONES</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card bg-black text-white border-0  m-3">
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<div class="card-body wow animate__animated animate__bounceInLeft">
+								<div class="miniBanner miniBanner--gradient miniBanner--border">
+									<a class="miniBanner__text" href="./events.html">EVENTOS</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<img src="./assets/img/events-bgImage-tablet.jpg" class="card-img" alt="EVENTOS">
+						</div>
+					</div>
+				</div>
+
+				<div class="card bg-black text-white border-0  m-3">
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<img src="./assets/img/gallery-bgImage-tablet.jpg" class="card-img" alt="GALERIA">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body wow animate__animated animate__bounceInRight">
+								<div class="miniBanner miniBanner--gradient miniBanner--border">
+									<a class="miniBanner__text" href="./gallery.html">GALERIA</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card bg-black text-white border-0  m-3">
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<div class="card-body wow animate__animated animate__bounceInLeft">
+								<div class="miniBanner miniBanner--gradient miniBanner--border">
+									<a class="miniBanner__text" href="./contact.html">CONTACTO</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<img src="./assets/img/contact-bgImage-tablet.jpg" class="card-img" alt="CONTACTO">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="footer container-fluid  mx-auto w-100 px-0 text-center">
+
+			<div class="d-flex flex-column flex-md-row">
+
+				<div class="footer__schedule container col-12 col-md-4 col-lg-4 p-4">
 					<div>
-						<ul>
-							<li><a href="./menu.html">NUESTRA CARTA</a></li>
-							<li><a href="./reservations.html">RESERVACIONES</a></li>
+						<p>Días y Horarios</p>
+						<p>Jueves a Domingos</p>
+						<p>20:30 - 00:30</p>
+					</div>
+				</div>
+
+				<div class="footer__socialMedia container col-12 col-md-4 col-lg-4 p-4">
+					
+					<nav>
+						<ul class="list-inline p-2">
+							<li class="list-inline-item"><a href="https://es-la.facebook.com/" target="_blank"
+									rel="noopener noreferrer">
+									<i class="fab fa-facebook fa-2x "></i></a></li>
+							<li class="list-inline-item"><a href="https://www.youtube.com/" target="_blank"
+									rel="noopener noreferrer">
+									<i class="fab fa-youtube fa-2x "></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/?hl=es-la" target="_blank"
+									rel="noopener noreferrer">
+									<i class="fab fa-instagram fa-2x "></i></a></li>
+							<li class="list-inline-item"><a
+									href="https://api.whatsapp.com/send/?phone=5493517441616&text&app_absent=0"
+									target="_blank" rel="noopener noreferrer">
+									<i class="fab fa-whatsapp fa-2x "></i></a></li>
 						</ul>
+					</nav>
+				</div>
+
+				<div class="footer__address container col-12 col-md-4 col-lg-4 p-4">
+					<div>
+						<address>
+							<p>Córdoba, Argentina</p>
+							<p>Av. Rafael Nueñez 4560</p>
+							<p>Tel: (351) 432-6990 / (351) 986-7496</p>
+						</address>
 					</div>
 				</div>
 
 			</div>
-		</div>
-
-		<div class="gMenu miniBannerStyle backgroundMenu">
-			<a class="gradiente scale wow animate__animated animate__bounceInLeft" href="./menu.html">MENU</a>
-		</div>
-		<div class="gReservations miniBannerStyle backgroundReservations">
-			<a class="gradiente scale wow animate__animated animate__bounceInLeft"
-				href="./reservations.html">RESERVACIONES</a>
-		</div>
-		<div class="gEvents miniBannerStyle backgroundEvents">
-			<a class="gradiente scale wow animate__animated animate__bounceInLeft" href="./events.html">EVENTOS</a>
-		</div>
-		<div class="gGallery miniBannerStyle backgroundGallery">
-			<a class="gradiente scale wow animate__animated animate__bounceInLeft" href="./gallery.html">GALERIA</a>
-		</div>
-		<div class="gContact miniBannerStyle backgroundContact">
-			<a class="gradiente scale wow animate__animated animate__bounceInLeft" href="./contact.html">CONTACTO</a>
-		</div>
-
+		</footer><!-- FOOTER END -->
 	</div>
 
-	<footer id="footer" class="gridFooter">
-		<div class="gHours">
-			<p>Jueves a Domingos</p>
-			<p>20:30 - 00:30</p>
-			<p>Av. Rafael Nueñez 4560</p>
-		</div>
-		<div class="gFollowUs">
-
-			<nav>
-				<ul>
-					<li><a href="https://es-la.facebook.com/"><i class="fab fa-facebook scale"></i></a></li>
-					<li><a href="https://www.youtube.com/"><i class="fab fa-youtube scale"></i></a></li>
-					<li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram scale"></i></a></li>
-					<li><a href="https://api.whatsapp.com/send/?phone=5493517441616&text&app_absent=0"><i
-								class="fab fa-whatsapp scale"></i></a></li>
-				</ul>
-			</nav>
-		</div>
-
-	</footer><!-- Fin Pie de Página -->
 
 
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
 	</script>
-
+	<script src="./jquery/jquery-3.5.1.slim.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

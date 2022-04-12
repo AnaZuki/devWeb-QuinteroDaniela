@@ -4128,10 +4128,10 @@ readers do not read off random characters that represent icons */
 .fa-twitch:before {
   content: "\f1e8"; }
 
-.fa-youtube:before {
+.fa-twitter:before {
   content: "\f099"; }
 
-.fa-youtube-square:before {
+.fa-twitter-square:before {
   content: "\f081"; }
 
 .fa-typo3:before {
