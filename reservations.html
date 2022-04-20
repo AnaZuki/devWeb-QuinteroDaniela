@@ -9,7 +9,6 @@
 	<link href="./assets/Awesome/css/all.min.css" rel="stylesheet">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/animation.css">
 	<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<title>RESERVACIONES</title>
@@ -58,8 +57,10 @@
 			<!--BANNER -->
 			<div class="banner__overlay banner__overlay--soft"></div>
 			<div class="banner__container w-100">
-				<span class="d-inline-block d-sm-none h1 font-weight-light tracking-in-contract my-3 px-2">RESERVACIONES</span>
-				<span class="d-none d-md-inline-block d-lg-none display-4 tracking-in-contract my-4 px-2">RESERVACIONES</span>
+				<span
+					class="d-inline-block d-sm-none h1 font-weight-light tracking-in-contract my-3 px-2">RESERVACIONES</span>
+				<span
+					class="d-none d-md-inline-block d-lg-none display-4 tracking-in-contract my-4 px-2">RESERVACIONES</span>
 				<span class="d-none d-lg-inline-block display-3 tracking-in-contract my-5 px-2">RESERVACIONES</span>
 			</div>
 		</div>
@@ -135,7 +136,6 @@
 				</div>
 
 				<div class="footer__socialMedia container col-12 col-md-4 col-lg-4 p-4">
-					
 					<nav>
 						<ul class="list-inline p-2">
 							<li class="list-inline-item"><a href="https://es-la.facebook.com/" target="_blank"
@@ -148,7 +148,7 @@
 									rel="noopener noreferrer">
 									<i class="fab fa-instagram fa-2x "></i></a></li>
 							<li class="list-inline-item"><a
-									href="https://api.whatsapp.com/send/?phone=5493517441616&text&app_absent=0"
+									href="https://api.whatsapp.com/send/?phone=5493517441616&amp;text&amp;app_absent=0"
 									target="_blank" rel="noopener noreferrer">
 									<i class="fab fa-whatsapp fa-2x "></i></a></li>
 						</ul>
@@ -166,13 +166,18 @@
 				</div>
 
 			</div>
+			<div class="footer__goUp container col-12 col-md-12 col-lg-12">
+				<div>
+					<div><a href="#"><i class="fas fa-angle-double-up fa-2x p-3"></i></a></div>
+				</div>
+			</div>
 		</footer><!-- FOOTER END -->
 
 		<!-- Modal -->
 		<div class="modal fade" id="modalMessage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header bg-purple">
+					<div class="modal-header bg-red">
 						<h5 class="modal-title" id="exampleModalLabel">HajimeFood</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
