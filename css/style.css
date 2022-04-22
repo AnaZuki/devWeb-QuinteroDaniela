@@ -211,7 +211,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #13151e;
   scrollbar-width: thin;
-  scrollbar-color: #BF1B39 #a00000;
+  scrollbar-color: #D91A2A #a00000;
 }
 
 body::-webkit-scrollbar {
@@ -223,7 +223,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #BF1B39;
+  background-color: #D91A2A;
   border-radius: 6px;
   border: 3px solid #a00000;
 }
@@ -234,7 +234,7 @@ body::-webkit-scrollbar-thumb {
  * ----------------------------------------
  */
 .colorPink {
-  color: #BF1B39;
+  color: #D91A2A;
 }
 
 .colorWhite {
@@ -246,8 +246,8 @@ body::-webkit-scrollbar-thumb {
  * Background colors
  * ----------------------------------------
  */
-.bg-pink {
-  background-color: #BF1B39;
+.bg-red {
+  background-color: #D91A2A;
 }
 
 .bg-black {
@@ -317,13 +317,13 @@ body::-webkit-scrollbar-thumb {
 
 /* Change the color of active or hovered links */
 .navbar-custom__link--colorPink .nav-item.active .nav-link, .navbar-custom__link--colorPink .nav-item:focus .nav-link, .navbar-custom__link--colorPink .nav-item:hover .nav-link {
-  color: #BF1B39;
+  color: #D91A2A;
   cursor: url(../assets/icons/cursor.png), auto;
 }
 
 /* Change the color of toogler */
 .navbar-custom__toogler.navbar-toggler i {
-  color: #BF1B39;
+  color: #D91A2A;
 }
 
 /**
@@ -480,7 +480,7 @@ body::-webkit-scrollbar-thumb {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-style: italic;
-  border: 2px solid #BF1B39;
+  border: 2px solid #D91A2A;
   text-align: center;
 }
 
@@ -490,8 +490,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-link a:hover {
-  color: #BF1B39;
-  border-color: #BF1B39;
+  color: #D91A2A;
+  border-color: #D91A2A;
 }
 
 .card-size {
@@ -567,7 +567,7 @@ body::-webkit-scrollbar-thumb {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-style: italic;
-  border: 2px solid #BF1B39;
+  border: 2px solid #D91A2A;
   text-align: center;
 }
 
@@ -577,8 +577,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .event__date a:hover {
-  color: #BF1B39;
-  border-color: #BF1B39;
+  color: #D91A2A;
+  border-color: #D91A2A;
 }
 
 .event__date i {
@@ -626,7 +626,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer__socialMedia a:hover {
-  color: #BF1B39;
+  color: #D91A2A;
 }
 
 .footer__address {
@@ -644,7 +644,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer__goUp a:hover {
-  color: #BF1B39;
+  color: #D91A2A;
 }
 
 .footer__goUp p {
@@ -681,7 +681,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .button--theme-purple {
-  background: #BF1B39;
+  background: #D91A2A;
   border-radius: 10px 10px 10px 10px;
   border: 2px solid transparent;
 }
@@ -692,8 +692,8 @@ body::-webkit-scrollbar-thumb {
  * ----------------------------------------
  */
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #BF1B39;
-  border-color: #BF1B39;
+  background-color: #D91A2A;
+  border-color: #D91A2A;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }

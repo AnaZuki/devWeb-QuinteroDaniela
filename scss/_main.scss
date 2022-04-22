@@ -45,7 +45,7 @@ body{
     font-family: $font-roboto;
     background-color: $main-bg-color;
     scrollbar-width: thin;
-    scrollbar-color: $color-pink $color-darkviolet;
+    scrollbar-color: $color-red $color-darkviolet;
 }
 
 body::-webkit-scrollbar {
@@ -57,7 +57,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: $color-pink ;
+    background-color: $color-red ;
     border-radius: 6px;
     border: 3px solid $color-darkviolet;
 }
@@ -69,7 +69,7 @@ body::-webkit-scrollbar-thumb {
  */
 
 .colorPink{
-    color: $color-pink;
+    color: $color-red;
 }
 
 .colorWhite{
@@ -83,8 +83,8 @@ body::-webkit-scrollbar-thumb {
  * ----------------------------------------
  */
 
-.bg-pink{
-    background-color: $color-pink;
+.bg-red{
+    background-color: $color-red;
 }
 
 .bg-black{
@@ -137,7 +137,7 @@ body::-webkit-scrollbar-thumb {
 /* Change the color of active or hovered links */
 .navbar-custom__link--colorPink{
     & .nav-item.active .nav-link, .nav-item:focus .nav-link, .nav-item:hover .nav-link {
-        color: $color-pink;
+        color: $color-red;
         cursor: url(../assets/icons/cursor.png), auto;
     }
 }
@@ -146,7 +146,7 @@ body::-webkit-scrollbar-thumb {
 .navbar-custom__toogler{
     &.navbar-toggler {
         i{
-            color: $color-pink;
+            color: $color-red;
         }
     }
 }
@@ -300,15 +300,15 @@ $pages: Banner;
     font-family: $font-roboto;
     font-weight: $font-semi-bold;
     font-style: italic;
-    border: 2px solid $color-pink;
+    border: 2px solid $color-red;
     text-align: center;
     
     a{
         text-decoration: none;
         color: $main-font-color;
         &:hover{
-            color: $color-pink;
-            border-color: $color-pink;
+            color: $color-red;
+            border-color: $color-red;
         }
     }
 }
@@ -387,15 +387,15 @@ $pages: Banner;
     font-family: $font-roboto;
     font-weight: $font-semi-bold;
     font-style: italic;
-    border: 2px solid $color-pink;
+    border: 2px solid $color-red;
     text-align: center;
 
     a{
         text-decoration: none;
         color: $main-font-color;
         &:hover{
-            color: $color-pink;
-            border-color: $color-pink;
+            color: $color-red;
+            border-color: $color-red;
         }
     }
     i{
@@ -444,7 +444,7 @@ $pages: Banner;
     a{
         color: $main-font-color;
         &:hover{
-            color: $color-pink;
+            color: $color-red;
         }
     }
 }
@@ -460,7 +460,7 @@ $pages: Banner;
     a{
         color:$main-font-color;
         &:hover{
-            color:$color-pink;
+            color:$color-red;
         }
     }
     p{
@@ -501,7 +501,7 @@ $pages: Banner;
 }
 
 .button--theme-purple{
-    background: $color-pink;
+    background: $color-red;
     border-radius: 10px 10px 10px 10px;
     border: 2px solid transparent;
 }
@@ -514,8 +514,8 @@ $pages: Banner;
  */
 
 .custom-radio .custom-control-input:checked~.custom-control-label::before{
-    background-color: $color-pink;
-    border-color: $color-pink;
+    background-color: $color-red;
+    border-color: $color-red;
     box-shadow: none !important;
 }
 
