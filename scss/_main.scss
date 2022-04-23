@@ -45,7 +45,7 @@ body{
     font-family: $font-roboto;
     background-color: $main-bg-color;
     scrollbar-width: thin;
-    scrollbar-color: $color-red $color-darkviolet;
+    scrollbar-color: $color-red $color-fullred;
 }
 
 body::-webkit-scrollbar {
@@ -59,7 +59,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: $color-red ;
     border-radius: 6px;
-    border: 3px solid $color-darkviolet;
+    border: 3px solid $color-fullred;
 }
 
 /**
@@ -193,9 +193,6 @@ body::-webkit-scrollbar-thumb {
     align-content: center;
     text-align: center;
     z-index: 2;
-    span {
-        font-size: 3.8rem;
-    }
 }
 
 .banner__overlay{
@@ -307,7 +304,7 @@ $pages: Banner;
         text-decoration: none;
         color: $main-font-color;
         &:hover{
-            color: $color-red;
+            color: $color-gold;
             border-color: $color-red;
         }
     }
@@ -394,7 +391,7 @@ $pages: Banner;
         text-decoration: none;
         color: $main-font-color;
         &:hover{
-            color: $color-red;
+            color: $color-gold;
             border-color: $color-red;
         }
     }
@@ -435,22 +432,22 @@ $pages: Banner;
 }
 
 .footer__schedule{
-    background-color: $color-darkviolet;
+    background-color: $color-fullred;
 }
 
 .footer__socialMedia{
-    background-color: $color-darkviolet;
+    background-color: $color-fullred;
     color: $main-font-color;
     a{
         color: $main-font-color;
         &:hover{
-            color: $color-red;
+            color: $color-gold;
         }
     }
 }
 
 .footer__address{
-    background-color: $color-darkviolet;
+    background-color: $color-fullred;
     color: $main-font-color;
     font-size: 1rem;
 }
@@ -460,7 +457,7 @@ $pages: Banner;
     a{
         color:$main-font-color;
         &:hover{
-            color:$color-red;
+            color:$color-gold;
         }
     }
     p{
@@ -473,7 +470,7 @@ $pages: Banner;
 }
 
 .footer--bgGray{
-    background-color: $color-darkviolet;
+    background-color: $color-fullred;
 }
 
 /**
@@ -496,7 +493,7 @@ $pages: Banner;
 
 .button--hover{
     &:hover{
-        border: 2px solid $color-darkviolet;
+        border: 2px solid $color-fullred;
     }
 }
 

@@ -377,10 +377,6 @@ body::-webkit-scrollbar-thumb {
   z-index: 2;
 }
 
-.banner__container span {
-  font-size: 3.8rem;
-}
-
 .banner__overlay {
   position: absolute;
   top: 0;
@@ -490,7 +486,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-link a:hover {
-  color: #D91A2A;
+  color: #dfc298;
   border-color: #D91A2A;
 }
 
@@ -577,7 +573,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .event__date a:hover {
-  color: #D91A2A;
+  color: #dfc298;
   border-color: #D91A2A;
 }
 
@@ -626,7 +622,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer__socialMedia a:hover {
-  color: #D91A2A;
+  color: #dfc298;
 }
 
 .footer__address {
@@ -644,7 +640,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer__goUp a:hover {
-  color: #D91A2A;
+  color: #dfc298;
 }
 
 .footer__goUp p {
