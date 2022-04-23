@@ -317,13 +317,13 @@ body::-webkit-scrollbar-thumb {
 
 /* Change the color of active or hovered links */
 .navbar-custom__link--colorPink .nav-item.active .nav-link, .navbar-custom__link--colorPink .nav-item:focus .nav-link, .navbar-custom__link--colorPink .nav-item:hover .nav-link {
-  color: #D91A2A;
+  color: #dfc298;
   cursor: url(../assets/icons/cursor.png), auto;
 }
 
 /* Change the color of toogler */
 .navbar-custom__toogler.navbar-toggler i {
-  color: #D91A2A;
+  color: #dfc298;
 }
 
 /**

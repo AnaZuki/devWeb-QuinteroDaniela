@@ -137,7 +137,7 @@ body::-webkit-scrollbar-thumb {
 /* Change the color of active or hovered links */
 .navbar-custom__link--colorPink{
     & .nav-item.active .nav-link, .nav-item:focus .nav-link, .nav-item:hover .nav-link {
-        color: $color-red;
+        color: $color-gold;
         cursor: url(../assets/icons/cursor.png), auto;
     }
 }
@@ -146,7 +146,7 @@ body::-webkit-scrollbar-thumb {
 .navbar-custom__toogler{
     &.navbar-toggler {
         i{
-            color: $color-red;
+            color: $color-gold;
         }
     }
 }
