@@ -33,17 +33,23 @@ input[type=number] {
 
 /**
  * ----------------------------------------
- * Boddy - Style
+ * Body - Style
  * ----------------------------------------
  */
 
+$body_style: (
+    color: $main-font-color,
+    background-color: $main-bg-color
+);
+
+
 body{
-    color: $main-font-color;
+    color: map-get($body_style, color);
     font-style: normal;
     font-weight: $font-light;
     font-size: 1rem;
     font-family: $font-roboto;
-    background-color: $main-bg-color;
+    background-color: map-get($body_style, background-color);
     scrollbar-width: thin;
     scrollbar-color: $color-red $color-fullred;
 }
@@ -112,18 +118,23 @@ body::-webkit-scrollbar-thumb {
  * ----------------------------------------
  */
 
+.custom_cursor{
+    cursor: url(../assets/icons/cursor.png), auto;
+}
+
 /* Change background color */
 .navbar-custom {
+    @extend .custom_cursor;
     background-color: $main-bg-color;
     color: $main-font-color;
     font-family: $font-roboto;
-    cursor: url(../assets/icons/cursor.png), auto;
 }
+
 /* Change the brand and text color */
 .navbar-custom__brand{
     &.navbar-brand, .navbar-text {
+        @extend .custom_cursor;
         color: $main-font-color;
-        cursor: url(../assets/icons/cursor.png), auto;
     }
 }
 /* Change the link color */
@@ -135,10 +146,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Change the color of active or hovered links */
-.navbar-custom__link--colorPink{
+.navbar-custom__link--colorGold{
     & .nav-item.active .nav-link, .nav-item:focus .nav-link, .nav-item:hover .nav-link {
+        @extend .custom_cursor;
         color: $color-gold;
-        cursor: url(../assets/icons/cursor.png), auto;
     }
 }
 

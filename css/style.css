@@ -200,7 +200,7 @@ input[type=number] {
 
 /**
  * ----------------------------------------
- * Boddy - Style
+ * Body - Style
  * ----------------------------------------
  */
 body {
@@ -295,18 +295,20 @@ body::-webkit-scrollbar-thumb {
  * CUSTOM NAVBAR - Style
  * ----------------------------------------
  */
+.custom_cursor, .navbar-custom, .navbar-custom__brand.navbar-brand, .navbar-custom__brand .navbar-text, .navbar-custom__link--colorGold .nav-item.active .nav-link, .navbar-custom__link--colorGold .nav-item:focus .nav-link, .navbar-custom__link--colorGold .nav-item:hover .nav-link {
+  cursor: url(../assets/icons/cursor.png), auto;
+}
+
 /* Change background color */
 .navbar-custom {
   background-color: #13151e;
   color: #FAFAFA;
   font-family: "Roboto", sans-serif;
-  cursor: url(../assets/icons/cursor.png), auto;
 }
 
 /* Change the brand and text color */
 .navbar-custom__brand.navbar-brand, .navbar-custom__brand .navbar-text {
   color: #FAFAFA;
-  cursor: url(../assets/icons/cursor.png), auto;
 }
 
 /* Change the link color */
@@ -316,9 +318,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Change the color of active or hovered links */
-.navbar-custom__link--colorPink .nav-item.active .nav-link, .navbar-custom__link--colorPink .nav-item:focus .nav-link, .navbar-custom__link--colorPink .nav-item:hover .nav-link {
+.navbar-custom__link--colorGold .nav-item.active .nav-link, .navbar-custom__link--colorGold .nav-item:focus .nav-link, .navbar-custom__link--colorGold .nav-item:hover .nav-link {
   color: #dfc298;
-  cursor: url(../assets/icons/cursor.png), auto;
 }
 
 /* Change the color of toogler */
