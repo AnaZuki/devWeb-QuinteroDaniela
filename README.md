@@ -1,5 +1,11 @@
 # devWeb-QuinteroDaniela
 
+## Scripts para generación del archivo css.
+
+    npm run compile:sass
+    npm run compile:sass_min
+
+
 ## Cambios realizados para mejorar el SEO
 
 ### Página index.html
